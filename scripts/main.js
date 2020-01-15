@@ -31,6 +31,6 @@
   // let $time = document.querySelector('time');
   // $time.addEventListener('hover', () => {});
 
-  
+  let $time = new Date();
 
 })();

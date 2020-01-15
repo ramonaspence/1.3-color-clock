@@ -1,7 +1,35 @@
+* {
+  box-sizing: border-box;
+  font-family: "gothic", sans-serif;
+}
+
 body {
-  background: radial-gradient(#fff, #eee);
+  background: radial-gradient(#FFFFFF, #777777);
   background-position: center;
   height: 100vh;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+.time-box .time-background {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-text {
+  font-size: 5rem;
+}
+
+.progress-bar {
+  width: 30vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
