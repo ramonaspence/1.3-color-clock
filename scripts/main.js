@@ -14,40 +14,34 @@
   // console.log(date); prints current time and date in console log
 
   let $time = document.querySelector('time');
+  let currentTime, hours, mins, secs;
+  let $progress = document.querySelector('progress');
 
   let setTime = () => {
-    // console.log('hey');
-    let currentTime = new Date();
-    let hours = ('0' + currentTime.getHours()).slice(-2);
-    let mins = ('0' + currentTime.getMinutes()).slice(-2);
-    let secs = ('0' + currentTime.getSeconds()).slice(-2);
+    currentTime = new Date();
+    hours = ('0' + currentTime.getHours()).slice(-2);
+    mins = ('0' + currentTime.getMinutes()).slice(-2);
+    secs = ('0' + currentTime.getSeconds()).slice(-2);
 
     let getCurrentTime = (`${hours}:${mins}:${secs}`);
-
     $time.textContent = (getCurrentTime);
 
+    let percentage  = ((secs) * 3);
+
+    let width = ((percentage).toString());
+
+
+
+    // let barWidth = (percentage * 100).toString();
+    $progress.style.width = (`${width}px`);
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
+    // $progress.style.width = ('200px');
 
 
 
   setInterval(setTime, 1000);
-
-
-
-
 
 
 })();
