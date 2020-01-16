@@ -44,7 +44,15 @@
 
       let theTime = document.querySelector('time');
 
-      theTime.innerHTML = currentTime;
+      theTime.innerHTML = (currentTime);
+
+      setInterval(theTime, 1000);
+
+      // let theTime = document.querySelector('time');
+      //
+      // theTime.innerHTML = (currentTime);
+      //
+      // setInterval(, 1000);
 
 
 
