@@ -26,7 +26,7 @@
     let getCurrentTime = (`${hours}:${mins}:${secs}`);
     $time.textContent = (getCurrentTime);
 
-    let percentage  = ((secs) * 3);
+    let percentage  = ((secs) * 5);
 
     let width = ((percentage).toString());
 
