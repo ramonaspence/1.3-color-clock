@@ -30,16 +30,26 @@
   //
   // let $time = document.querySelector('time');
   // $time.addEventListener('hover', () => {});
-      let currentTime //this declares a variable and allows you to give it value on line36
-
-      let getCurrentTime = () => {   //this declares a variable for a function?
-        currentTime = new Date();    //then gives currentTime a value
-        console.log(currentTime)    //then gives it a...method or object and function?
-      }
+      // let currentTime //this declares a variable and allows you to give it value on line36
+      //
+      // let getCurrentTime = () => {   //this declares a variable for a function?
+      //   currentTime = new Date();    //then gives currentTime a value
+      //   console.log(currentTime)    //then gives it a...method or object and function?
+      // }
 
       // console.log(getCurrentTime);
 
-      setInterval(getCurrentTime, 1000); //sets a time interval to repeat the above function on lines 33-38
+      // setInterval(getCurrentTime, 1000); //sets a time interval to repeat the above function on lines 33-38
+      let currentTime = new Date();
+
+      let theTime = document.querySelector('time');
+
+      theTime.innerHTML = currentTime;
+
+
+
+
+
 
 
 })();
