@@ -14,40 +14,21 @@
   // console.log(date); prints current time and date in console log
   let $time = document.querySelector('time');
 
+
   let $currentTime = new Date();
-  //
-  // let getCurrentTime = () => {
-  //   let $currentTime = new Date();
-  //   $time.textContent = ($currentTime);
-  // }
+
+
   let $hours = $currentTime.getHours();
   let $mins = $currentTime.getMinutes();
   let $secs = $currentTime.getSeconds();
 
-  
-  // let getCurrentTime = () => {
-  //   $time.textContent = ($currentTime);
-  // }
-  //
-  // setInterval(getCurrentTime, 1000)
+  let getCurrentTime = (`${$hours}:${$mins}:${$secs}`);
 
+  let thisFunction = () => {
+    $time.textContent = (getCurrentTime);
+}
 
-  // $getCurrentTime();
-
-
-  // let $button = document.querySelector('button');
-  // $button.addEventListener('click', () => {
-  //   console.log('you touched the but');
-  // });
-  //
-  // let $time = document.querySelector('time');
-  // $time.addEventListener('hover', () => {});
-
-
-
-
-
-
+  setInterval(thisFunction, 1000);
 
 
 })();
