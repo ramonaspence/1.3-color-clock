@@ -18,9 +18,9 @@
   let setTime = () => {
     // console.log('hey');
     let currentTime = new Date();
-    let hours = currentTime.getHours();
-    let mins = currentTime.getMinutes();
-    let secs = currentTime.getSeconds();
+    let hours = ('0' + currentTime.getHours()).slice(-2);
+    let mins = ('0' + currentTime.getMinutes()).slice(-2);
+    let secs = ('0' + currentTime.getSeconds()).slice(-2);
 
     let getCurrentTime = (`${hours}:${mins}:${secs}`);
 
