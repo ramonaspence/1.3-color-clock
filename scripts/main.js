@@ -14,12 +14,12 @@
   // console.log(date); prints current time and date in console log
   //
   //setInterval(function, ms);
-   // let currentTime;
-   //
-   // let getCurrentTime = () => {
-   //   currentTime = new Date();
-   //   console.log(currentTime);
-   // }
+  // let currentTime;
+  //
+  // let getCurrentTime = () => {
+  //   currentTime = new Date();
+  //   console.log(currentTime);
+  // }
 
 
 
@@ -30,29 +30,54 @@
   //
   // let $time = document.querySelector('time');
   // $time.addEventListener('hover', () => {});
-      // let currentTime //this declares a variable and allows you to give it value on line36
-      //
-      // let getCurrentTime = () => {   //this declares a variable for a function?
-      //   currentTime = new Date();    //then gives currentTime a value
-      //   console.log(currentTime)    //then gives it a...method or object and function?
-      // }
+  // let currentTime //this declares a variable and allows you to give it value on line36
+  //
+  // let getCurrentTime = () => {   //this declares a variable for a function?
+  //   currentTime = new Date();    //then gives currentTime a value
+  //   console.log(currentTime)    //then gives it a...method or object and function?
+  // }
 
-      // console.log(getCurrentTime);
+  // console.log(getCurrentTime);
 
-      // setInterval(getCurrentTime, 1000); //sets a time interval to repeat the above function on lines 33-38
-      let currentTime = new Date();
+  // setInterval(getCurrentTime, 1000); //sets a time interval to repeat the above function on lines 33-38
+  // let currentTime = new Date(); //now on line52
 
-      let theTime = document.querySelector('time');
+  // let time = document.querySelector('time');
+  //
+  // document.time = time.innerHTML = currentTime;
+  //
+  // setInterval(document.time, 1000);
 
-      theTime.innerHTML = (currentTime);
+  setInterval(getCurrentTime, 1000);
 
-      setInterval(theTime, 1000);
+  function getCurrentTime() {
+    let currentTime = new Date();
+    let time = date.toLocaleTimeString();
+    document.getElementByClass('time').textContent = time;
+  }
 
-      // let theTime = document.querySelector('time');
-      //
-      // theTime.innerHTML = (currentTime);
-      //
-      // setInterval(, 1000);
+  
+
+
+
+
+  //document.body.innerHTML = "";
+
+
+
+  // function getCurrentTime {
+  //
+  // }
+
+
+
+
+
+  // let theTime = document.querySelector('time');
+  //
+  // theTime.innerHTML = (currentTime);
+  //
+  // setInterval(, 1000);
 
 
 
