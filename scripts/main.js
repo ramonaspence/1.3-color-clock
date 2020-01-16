@@ -14,14 +14,22 @@
   // console.log(date); prints current time and date in console log
   let $time = document.querySelector('time');
 
+  let $currentTime = new Date();
+  //
+  // let getCurrentTime = () => {
+  //   let $currentTime = new Date();
+  //   $time.textContent = ($currentTime);
+  // }
+  let $hours = $currentTime.getHours();
+  let $mins = $currentTime.getMinutes();
+  let $secs = $currentTime.getSeconds();
 
-
-  let getCurrentTime = () => {
-    let $currentTime = new Date();
-    $time.textContent = ($currentTime);
-  }
-
-  setInterval(getCurrentTime, 1000)
+  
+  // let getCurrentTime = () => {
+  //   $time.textContent = ($currentTime);
+  // }
+  //
+  // setInterval(getCurrentTime, 1000)
 
 
   // $getCurrentTime();
