@@ -33,7 +33,7 @@ A repo containing at least:
 * console.log the percentage of a minute that the current seconds represents (e.g., if 30 seconds have elapsed, console.log 0.5)
 * Using the percent above, dynamically modify the length of the timer bar
 * console.log a hexidecimal color that is based on the current second, every second
-* Dynamically update the background color of the page using the color
+* !!!!!!!Dynamically update the background color of the page using the color!!!!!!!!<===YOU ARE HERE!!!!!!!!!
 * Display the generated color's hex value on hover
 * Mission Accomplished!
 **Recommended Watching and Reading**
