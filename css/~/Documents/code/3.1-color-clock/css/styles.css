@@ -16,6 +16,7 @@ body {
   height: 100vh;
   justify-content: center;
 }
+
 .time-box .time-background {
   height: 30vh;
   display: flex;
@@ -31,5 +32,7 @@ body {
 .progress-bar {
   width: 30vw;
 }
+
+/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */

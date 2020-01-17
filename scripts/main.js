@@ -1,17 +1,8 @@
-//Immediately Invoked Function Element
+//!!!!use typeof to check if something is a string or number or something else!!!!
 
 (function() {
   'use strict';
 
-  // let $container = document.querySelector('span');
-  //
-  // $container.textContent = "Friday"
-  //
-  // let $elementId = document.querySelector('#my-id');
-  // console.log($elementId.textContent);
-  //
-  // let $date = new Date(); creates variable $date to equal to the "new Date" which is the time of it running.
-  // console.log(date); prints current time and date in console log
 
   let $time = document.querySelector('time');
   let currentTime, hours, mins, secs;
@@ -26,22 +17,31 @@
     let getCurrentTime = (`${hours}:${mins}:${secs}`);
     $time.textContent = (getCurrentTime);
 
-    let percentage  = ((secs) * 5);
+    let percentage = ((secs) * 5);
 
     let width = ((percentage).toString());
 
-
-
-    // let barWidth = (percentage * 100).toString();
     $progress.style.width = (`${width}px`);
+
+
   }
-
-
-    // $progress.style.width = ('200px');
-
-
 
   setInterval(setTime, 1000);
 
 
+  let getHexCode = () => {
+    currentTime = new Date();
+    hours = currentTime.getHours();
+    mins = currentTime.getMinutes();
+    secs = currentTime.getSeconds();
+    let hex = (`${hours}` + `${mins}` + `${secs}`);
+    let hexCode = Number(hex).toString(16).slice(-3);
+    let $body = document.querySelector('body');
+
+    $body.style.backgroundColor = ("#" + hexCode); //so all elements are turned into javascript by using camelCase. therefore
+    //background-color = backgroundColor, NOT backgroundcolor.
+    //ALSO you can't use dot notation (ie style.backgroundcolor) with backtick concatenation
+  }
+
+  setInterval(getHexCode, 1000);
 })();
