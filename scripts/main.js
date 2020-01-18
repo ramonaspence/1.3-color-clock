@@ -17,6 +17,11 @@
     let getCurrentTime = (`${hours}:${mins}:${secs}`);
     $time.textContent = (getCurrentTime);
 
+    let hex = (`${hours}` + `${mins}` + `${secs}`);
+    let hexCode = Number(hex).toString(16).slice(-3);
+    let $body = document.querySelector('body');
+    $body.style.backgroundColor = ("#" + hexCode);
+
     let percentage = ((secs) * 5);
 
     let width = ((percentage).toString());
@@ -28,20 +33,7 @@
 
   setInterval(setTime, 1000);
 
+  //new function with mouseover event will go here
 
-  let getHexCode = () => {
-    currentTime = new Date();
-    hours = currentTime.getHours();
-    mins = currentTime.getMinutes();
-    secs = currentTime.getSeconds();
-    let hex = (`${hours}` + `${mins}` + `${secs}`);
-    let hexCode = Number(hex).toString(16).slice(-3);
-    let $body = document.querySelector('body');
 
-    $body.style.backgroundColor = ("#" + hexCode); //so all elements are turned into javascript by using camelCase. therefore
-    //background-color = backgroundColor, NOT backgroundcolor.
-    //ALSO you can't use dot notation (ie style.backgroundcolor) with backtick concatenation
-  }
-
-  setInterval(getHexCode, 1000);
 })();
